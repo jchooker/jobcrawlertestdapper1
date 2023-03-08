@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<div class="card">
+    <div class="card-header">
+        <div class="text-center">
+            <h1 class="display-4 text-warning lightened-shadow">Add Another Job Application</h1>
+        </div>
+    </div>
+    <div class="card-body">
+        <form id="new-job-app">
+            <div id="first-row" class="row mb-4">
+                <div class="col-2">
+                    <label for="job-title" class="col-form-label">Job Title:</label>
+                    <input id="job-title" class="form-control" type="text" />
+                </div>
+                <div class="col-3 d-flex flex-column">
+                    <label for="job-platform" class="col-form-label">Job Platform:</label>
+                    <select id="job-platform" class="form-select">
+                        <option value="" disabled selected hidden>Select Job Platform</option>
+                    </select>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="card-footer">
+        <button href="#" class="btn btn-primary" form="new-job-app">Add to jobs applied list</button>
+    </div>
+</div>
