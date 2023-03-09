@@ -9,9 +9,15 @@ namespace JobCrawler.Controllers
 {
     public class JobsController : Controller
     {
+        private static List<Job> jobs = new List<Job>();
         public IActionResult Index()
         {
             return View();
+        }
+
+        public IActionResult JobInputPartial() 
+        {
+            return PartialView("_JobInput", jobs);
         }
     }
 }

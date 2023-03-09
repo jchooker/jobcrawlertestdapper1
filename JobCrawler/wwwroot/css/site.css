@@ -41,3 +41,7 @@ label {
 option {
     font-weight: 400;
 }
+
+.navbar-brand {
+    font-weight: bold;
+}
